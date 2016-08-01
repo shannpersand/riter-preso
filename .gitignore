@@ -5,4 +5,4 @@
 *.codekit
 /.codekit-cache
 config.codekit
-/scss/.sass-cache/*/style.scssc
+/scss/.sass-cache/*
