@@ -1,0 +1,94 @@
+@import "normalize";
+
+/*------------------------------------*\
+  #SETTINGS
+\*------------------------------------*/
+$orange: #FF8900;
+$black: #000;
+$white: #fff;
+$red: #FF4009;
+$blue: #006EBD;
+
+$type-12: 1.2rem;
+$type-14: 1.4rem;
+$type-16: 1.6rem;
+$type-24: 2.4rem;
+
+$black-15: lighten($black, 15%);
+$black-40: lighten($black, 40%);
+$black-75: lighten($black, 75%);
+$black-85: lighten($black, 85%);
+$black-90: lighten($black, 90%);
+$black-95: lighten($black, 95%);
+$black-97: lighten($black, 97%);
+
+$time-fast: 200ms;
+$time-faster: 100ms;
+
+
+
+/*------------------------------------*\
+  # BASE
+\*------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 62.5%;
+}
+
+.fade {
+  opacity: 0.5;
+}
+
+ul,li {
+  list-style: none;
+  padding-left: 0;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.image--small {
+  width: 25%;
+}
+
+.image--medium {
+  width: 50%;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"]  {
+  display: block;
+  width: 100%;
+}
+
+input[type="radio"] {
+  display: inline;
+}
+
+select {
+  display: block;
+}
