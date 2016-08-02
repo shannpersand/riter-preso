@@ -36,7 +36,7 @@ $( document ).ready(function() {
     });
 });
 
-  $('.uber').click(function() {
+  $(".uber").click(function() {
   if ($(this).hasClass('fade')) {
         $('.modal').addClass('hide');
         $(this).removeClass('fade');
