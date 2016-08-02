@@ -358,6 +358,9 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 2rem; }
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 3rem; } }
 
 .header {
   background: aquamarine;
@@ -408,6 +411,9 @@ section {
   line-height: 1.5;
   text-align: center;
   padding-bottom: 4rem; }
+  @media screen and (max-width: 600px) {
+    .description {
+      font-size: 1.8rem; } }
 
 .timeline {
   background-color: salmon; }
@@ -438,6 +444,9 @@ section {
   padding-top: 1.5rem;
   font-size: 1.8rem;
   line-height: 1.4; }
+  @media screen and (max-width: 600px) {
+    .information {
+      font-size: 1.4rem; } }
 
 .modal {
   position: fixed;
@@ -456,7 +465,12 @@ section {
   font-size: 10.8rem;
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  word-break: break-all;
+  transition: all 300ms ease; }
+  @media screen and (max-width: 600px) {
+    .big-text {
+      font-size: 7.2rem; } }
 
 .italic {
   font-family: "riter_basic_italicitalic", courier, monospaced; }
