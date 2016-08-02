@@ -1,94 +1,77 @@
-@import "normalize";
+@import "base";
+@import "mixins";
+@import "variables";
+@import "generic";
+@import "grid";
+@import "sizing";
+@import "type";
+@import "helpers";
 
-/*------------------------------------*\
-  #SETTINGS
-\*------------------------------------*/
-$orange: #FF8900;
-$black: #000;
-$white: #fff;
-$red: #FF4009;
-$blue: #006EBD;
-
-$type-12: 1.2rem;
-$type-14: 1.4rem;
-$type-16: 1.6rem;
-$type-24: 2.4rem;
-
-$black-15: lighten($black, 15%);
-$black-40: lighten($black, 40%);
-$black-75: lighten($black, 75%);
-$black-85: lighten($black, 85%);
-$black-90: lighten($black, 90%);
-$black-95: lighten($black, 95%);
-$black-97: lighten($black, 97%);
-
-$time-fast: 200ms;
-$time-faster: 100ms;
+// custom styles
 
 
-
-/*------------------------------------*\
-  # BASE
-\*------------------------------------*/
-* {
-  box-sizing: border-box;
-}
-
-
-html,
-body {
-  font-family: Helvetica, Arial, Sans-serif;
-  font-size: 62.5%;
-}
-
-.fade {
-  opacity: 0.5;
-}
-
-ul,li {
-  list-style: none;
-  padding-left: 0;
-}
-
-dl {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-img {
+.header {
+  background: aquamarine;
+  height: auto;
+  position: fixed;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 100%;
+  top: 0;
 }
 
-.image--small {
-  width: 25%;
-}
-
-.image--medium {
-  width: 50%;
-}
-
-fieldset {
-  border: 0;
-  padding: 0;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="password"]  {
+.nav {
   display: block;
+  text-align: center;
+  li {
+    display: inline-block;
+    a {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+section {
+  border-top: 5px solid whitesmoke;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+
+.timeline {
+  background-color: salmon;
+}
+
+.samples {
+  background-color: dodgerblue;
+}
+
+.application {
+  background-color: goldenrod;
+  display: flex;
+}
+
+
+.footer {
+  background: violet;
+  border-top: 5px solid whitesmoke;
+  padding: 3rem;
+  text-align: center;
+}
+
+
+
+.writing-space {
+  height: 80%;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  border: none;
+  overflow: auto;
+  outline: none;
+  resize: none;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  padding: 2%;
   width: 100%;
-}
-
-input[type="radio"] {
-  display: inline;
-}
-
-select {
-  display: block;
+  min-height: 80rem;
 }
