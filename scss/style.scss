@@ -9,6 +9,29 @@
 
 // custom styles
 
+.fade {
+  background: black;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
 
 .header {
   background: aquamarine;
@@ -18,6 +41,8 @@
   padding-bottom: 2rem;
   width: 100%;
   top: 0;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .nav {
@@ -54,6 +79,13 @@ section {
   padding-right: 2.5%;
 }
 
+.description {
+  font-family: $font-secondary;
+  font-size: $double-pica;
+  line-height: 1.5;
+  text-align: center;
+  padding-bottom: 4rem;
+}
 
 .timeline {
     background-color: salmon;
@@ -62,11 +94,13 @@ section {
     clear: both;
     overflow: hidden;
     display: table;
+    width: 100%;
+    position: relative;
   }
 
   .border {
     border-top: 5px solid lightsalmon;
-    padding-top: 1rem;
+    padding-top: 2%;
   }
 
   .left {
@@ -87,17 +121,76 @@ section {
   }
 }
 
+.information {
+  padding-top: 1.5rem;
+  font-size: $great-primer;
+  line-height: 1.4;
+}
 
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  left: 50%;
+  margin-left: -40%;
+  z-index: 4;
+  overflow: scroll;
+}
 
+// Characters
+.characters {
+  background-color: gainsboro;
+}
+
+.big-text {
+  font-size: $imperial;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.italic {
+  font-family: $font-secondary;
+}
+
+// Samples
 .samples {
   background-color: dodgerblue;
 }
 
+.sample-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.thumbnail {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: all 200ms ease;
+
+  img {
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all 200ms ease;
+  }
+
+  &:active {
+    transform: scale(1.02);
+    transition: all 200ms ease;
+  }
+}
+
+
+// text writing sample
 .application {
   background-color: goldenrod;
   display: flex;
 }
-
 
 .footer {
   background: violet;
@@ -106,18 +199,19 @@ section {
   text-align: center;
 }
 
-
-
 .writing-space {
   height: 80%;
-  font-size: 1.6rem;
+  font-family: $font-main;
+  font-size: 1.8rem;
   line-height: 1.6;
   border: none;
   overflow: auto;
   outline: none;
   resize: none;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10%;
   width: 100%;
-  min-height: 80rem;
+  min-height: 60rem;
 }
