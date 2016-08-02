@@ -436,8 +436,8 @@ section {
 
 .modal {
   position: fixed;
-  top: 15%;
-  bottom: 20%;
+  top: 10%;
+  bottom: 10%;
   width: 80%;
   left: 50%;
   margin-left: -40%;
