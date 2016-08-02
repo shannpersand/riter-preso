@@ -11,20 +11,24 @@ $fg-lighter: lighten($fg-main, 10%);
 
 
 @font-face {
-    font-family: 'riter base';
+    font-family: 'riter_basic_regularregular';
     src: url('fonts/riter_base-webfont.woff2') format('woff2'),
-         url('riter_base-webfont.woff') format('woff');
+         url('fonts/riter_base-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+
+
+
 @font-face {
-    font-family: 'riter base italic';
+    font-family: 'riter_basic_italicitalic';
     src: url('fonts/riter_base_italic-webfont.woff2') format('woff2'),
-         url('riter_base_italic-webfont.woff') format('woff');
+         url('fonts/riter_base_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 
 
@@ -46,8 +50,8 @@ $nonpareil: 0.6rem;
 $diamond: 0.4rem;
 
 /* set main body copy */
-$font-main: "riter base", courier, monospaced;
-$font-secondary: "riter base italic", courier, monospaced;
+$font-main: "riter_basic_regularregular", courier, monospaced;
+$font-secondary: "riter_basic_italicitalic", courier, monospaced;
 $body-copy: $great-primer;
 
 

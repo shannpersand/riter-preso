@@ -64,13 +64,13 @@ html {
 /* background and foreground colors */
 /* fonts */
 @font-face {
-  font-family: 'riter base';
-  src: url("fonts/riter_base-webfont.woff2") format("woff2"), url("riter_base-webfont.woff") format("woff");
+  font-family: 'riter_basic_regularregular';
+  src: url("fonts/riter_base-webfont.woff2") format("woff2"), url("fonts/riter_base-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'riter base italic';
-  src: url("fonts/riter_base_italic-webfont.woff2") format("woff2"), url("riter_base_italic-webfont.woff") format("woff");
+  font-family: 'riter_basic_italicitalic';
+  src: url("fonts/riter_base_italic-webfont.woff2") format("woff2"), url("fonts/riter_base_italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 /* type sizes*/
@@ -148,11 +148,11 @@ teal
 body {
   font-size: 1.6rem;
   line-height: 1.15;
-  font-family: "riter base", courier, monospaced;
+  font-family: "riter_basic_regularregular", courier, monospaced;
   background: whitesmoke; }
 
 p {
-  font-family: "riter base italic", courier, monospaced; }
+  font-family: "riter_basic_italicitalic", courier, monospaced; }
 
 img {
   width: 100%; }
@@ -377,8 +377,8 @@ h1 {
     display: inline-block; }
     .nav li a {
       color: darkviolet;
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 10%;
+      padding-right: 10%;
       padding-top: 1rem;
       padding-bottom: .5rem;
       transition: all 300ms ease; }
@@ -387,6 +387,11 @@ h1 {
         transition: translateY(0.5rem); }
       .nav li a:active {
         transition: translateY(0.5rem); }
+      @media screen and (max-width: 600px) {
+        .nav li a {
+          font-size: 90%;
+          padding-left: 5%;
+          padding-right: 5%; } }
 
 section {
   border-top: 5px solid whitesmoke;
@@ -398,7 +403,7 @@ section {
   padding-right: 2.5%; }
 
 .description {
-  font-family: "riter base italic", courier, monospaced;
+  font-family: "riter_basic_italicitalic", courier, monospaced;
   font-size: 2.4rem;
   line-height: 1.5;
   text-align: center;
@@ -454,7 +459,7 @@ section {
   padding-bottom: 2rem; }
 
 .italic {
-  font-family: "riter base italic", courier, monospaced; }
+  font-family: "riter_basic_italicitalic", courier, monospaced; }
 
 .samples {
   background-color: dodgerblue; }
@@ -489,7 +494,7 @@ section {
 
 .writing-space {
   height: 80%;
-  font-family: "riter base", courier, monospaced;
+  font-family: "riter_basic_regularregular", courier, monospaced;
   font-size: 1.8rem;
   line-height: 1.6;
   border: none;
