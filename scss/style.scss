@@ -26,22 +26,68 @@
   li {
     display: inline-block;
     a {
+      color: darkviolet;
       padding-left: 2rem;
       padding-right: 2rem;
+      padding-top: 1rem;
+      padding-bottom: .5rem;
+      transition: all 300ms ease;
+
+      &:hover {
+        border-bottom: 5px solid darkviolet;
+        transition: translateY(.5rem);
+      }
+      &:active {
+        transition: translateY(.5rem);
+      }
     }
   }
 }
 
 section {
   border-top: 5px solid whitesmoke;
+  border-left: 5px solid whitesmoke;
+  border-right: 5px solid whitesmoke;
   padding-top: 5rem;
   padding-bottom: 8rem;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
 }
 
 
 .timeline {
-  background-color: salmon;
+    background-color: salmon;
+
+  .timeline-wrapper {
+    clear: both;
+    overflow: hidden;
+    display: table;
+  }
+
+  .border {
+    border-top: 5px solid lightsalmon;
+    padding-top: 1rem;
+  }
+
+  .left {
+    border-right: 5px solid lightsalmon;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 8rem;
+    width: 50%;
+    display: table-cell;
+  }
+
+  .right {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5rem;
+    width: 50%;
+    display: table-cell;
+  }
 }
+
+
 
 .samples {
   background-color: dodgerblue;
