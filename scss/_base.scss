@@ -49,6 +49,7 @@ table {
 
 
 /* apply a natural box layout model to all elements, but allowing components to change */
+
 html {
     box-sizing: border-box;
     font: 62.5%/1.15 sans-serif;
@@ -56,9 +57,16 @@ html {
     -moz-osx-font-smoothing: greyscale;
     color: black;
     text-rendering: optimize-Legibility;
+    height: 100%;
   }
-    *, *:before, *:after {
+  
+*, *:before, *:after {
       box-sizing: inherit;
     }
+
+body {
+ height: 100%;
+}
+    
 
 

@@ -1,9 +1,9 @@
 /* background and foreground colors */
-$bg-main: whitesmoke;
+$bg-main: mintcream;
 $bg-darker: darken($bg-main, 10%);
 $bg-lighter: lighten($bg-main, 10%);
 
-$fg-main: deepskyblue;
+$fg-main: darken(slategrey, 20%);
 $fg-darker: darken($fg-main, 10%);
 $fg-lighter: lighten($fg-main, 10%);
 
@@ -52,75 +52,4 @@ $body-copy: $great-primer;
 
 /* sizes */
 $padding: 3%;
-/* pinks
 
-lightpink
-palevioletred
-deeppink
-
-*/
-
-/* light bg
-whitesmoke
-white
-snow
-mistyrose
-seashell
-linen
-oldlace
-antiquewhite
-floralwhite
-beige
-ivory
-honeydew
-mintcream
-azure
-aliceblue
-ghostwhite
-lavenderblush
-
-papayawhip
-blanchedalmond
-bisque
-cornsilk
-lemonchiffon
-lightgoldenrodyellow
-lightyellow
-lightcyan
-
-*/
-
-/* blues
-lightblue
-lightskyblue
-lightcyan
-lightsteelblue
-powderblue
-paleturquoise
-aqua
-blue
-cadetblue
-cornflowerblue
-cyan
-darkblue
-darkslateblue
-deepskyblue
-dodgerblue
-midnightblue
-mediumblue
-navy
-royalblue
-steelblue
-
-*/
-
-/* turquoise
-aquamarine
-cadetblue
-darkcyan
-darkturquoise
-lightseagreen
-mediumturquoise
-turquoise
-teal
-*/
