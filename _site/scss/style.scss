@@ -30,50 +30,27 @@ $darkgrey: darken(slategrey, 20%);
   -moz-background-size: cover;
   -o-background-size: cover;
    background-size: cover;
-   transition: all 1000ms ease;
-   position: relative;
 }
 
 h1 {
   color: orangered;
   text-align: center;
-  font-size: $canon;
   text-transform: uppercase;
   padding-bottom: 2rem;
 
-  @include screenWidth(small) {
-    font-size: $great-primer
+  @media screen and (max-width: 600px) {
+    font-size: $five-line-nonpareil;
   }
 }
 
 .title-container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.title-blurb {
-  font-size: $great-primer;
-  position: absolute;
-  width: 100%;
-  top: 65%;
-  text-align: center;
-
-  span {
-    background: rgba(white, 0.2);
-    padding: 20px;
-    max-width: 600px;
-    display: inline-block;
-  }
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .title-typewriter {
-  color: orangered;
-  font-size: $canon;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 5px solid white; /* The typwriter cursor */
+  border-right: 5px solid $darkgrey; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0; /* Adjust as needed */
@@ -84,9 +61,6 @@ h1 {
   animation: 
     typing 2s steps(20, end),
     blink-caret .75s step-end infinite;
-  @include screenWidth(small) {
-    font-size: $double-pica;
-  }
 }
 
 /* The typing effect */
@@ -102,29 +76,13 @@ h1 {
 }
 
 .navigation {
-  height: 0;
+  background: turquoise;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 100%;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
   z-index: 1;
-  position: relative;
-}
-
-.nav--term {
-  background: turquoise;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.js-stick-it {
-  position: static;
-}
-
-.nav__link--term {
-  font-size: 3em;
 }
 
 .nav {
@@ -180,25 +138,6 @@ section {
 }
 
 
-// Inspiration
-.gallery__item {
-  width: 75%;
-  margin: 20px auto;
-  box-shadow: 0 0 3px rgba($darkgrey, 0.3);
-  position: relative;
-}
-
-.gallery__caption {
-  background: rgba(lightsalmon, 0.4);
-  color: orangered;
-  font-size: $english;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  width: 100%;
-}
-
 // Characters
 .characters {
   
@@ -250,20 +189,6 @@ section {
     transform: scale(1.02);
     transition: all 200ms ease;
   }
-}
-
-// Comparison
-.ba-slider {
-  box-shadow: 0 0 3px rgba($darkgrey, 0.3);
-  margin-bottom: 20px;
-}
-
-.ba-slider .handle::after {
-  box-shadow: none;
-  color: darkcyan;
-  background: aquamarine;
-  border: 1px solid darkcyan;
-  box-shadow: 0 0 3px rgba($darkgrey, 0.3);
 }
 
 
