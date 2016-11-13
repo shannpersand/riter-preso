@@ -98,21 +98,6 @@ $( document ).ready(function() {
 
   $( window ).on('resize scroll', stickIt);
 
-  $( '.gallery__item' ).each(function() {
-    $(this).click(function(){
-      $(this).siblings().removeClass('embiggen');
-      $(this).addClass('embiggen');
-    });
-});
-
-  $(".uber").click(function() {
-  if ($(this).hasClass('fade')) {
-        $('.modal').addClass('hide');
-        $(this).removeClass('fade');
-        $('body').css('overflow','auto');
-    }
-});
-
 
   $('.ba-slider').each(function(){
     var cur = $(this);
