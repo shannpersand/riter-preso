@@ -258,9 +258,9 @@ section {
 
 .ba-slider .handle::after {
   box-shadow: none;
-  color: darkcyan;
-  background: aquamarine;
-  border: 1px solid darkcyan;
+  color: orangered;
+  background: lightsalmon;
+  border: 1px solid orangered;
   box-shadow: 0 0 3px rgba($darkgrey, 0.3);
 
   @include screenWidth(small) {

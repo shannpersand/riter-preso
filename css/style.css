@@ -530,9 +530,9 @@ section {
 
 .ba-slider .handle::after {
   box-shadow: none;
-  color: darkcyan;
-  background: aquamarine;
-  border: 1px solid darkcyan;
+  color: orangered;
+  background: lightsalmon;
+  border: 1px solid orangered;
   box-shadow: 0 0 3px rgba(67, 77, 87, 0.3); }
   @media (max-width: 600px) {
     .ba-slider .handle::after {
