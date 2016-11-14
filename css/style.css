@@ -107,7 +107,7 @@ body {
   background: mintcream; }
 
 p {
-  font-family: "riter_italicitalic", courier, monospaced; }
+  font-family: "riter_basic_italicitalic", courier, monospaced; }
 
 img {
   width: 100%; }
@@ -448,7 +448,7 @@ section {
       transition: all 100ms ease; } }
 
 .description {
-  font-family: "riter_italicitalic", courier, monospaced;
+  font-family: "riter_basic_italicitalic", courier, monospaced;
   font-size: 2.4rem;
   line-height: 1.5;
   text-align: center;
@@ -574,7 +574,7 @@ section {
   font-family: "riterbasic", courier, monospaced; }
 
 .characters-t3-italic {
-  font-family: "riter_italicitalic", courier, monospaced; }
+  font-family: "riter_basic_italicitalic", courier, monospaced; }
 
 .characters-t3-black {
   font-family: "riterblack", courier, monospaced; }
@@ -592,7 +592,7 @@ section {
       font-size: 4.4rem; } }
 
 .italic {
-  font-family: "riter_italicitalic", courier, monospaced; }
+  font-family: "riter_basic_italicitalic", courier, monospaced; }
 
 .sample-wrapper {
   display: -webkit-box;
