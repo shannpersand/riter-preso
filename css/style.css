@@ -647,7 +647,8 @@ section {
 iframe {
   display: block;
   width: 100%;
-  height: 70%; }
+  height: 70%;
+  min-height: 600px; }
 
 .linky {
   margin-top: 1rem;
