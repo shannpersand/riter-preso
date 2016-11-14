@@ -406,6 +406,18 @@ iframe {
   height: 70%;
 }
 
+.linky {
+  margin-top: 1rem;
+  display: block;
+  font-size: $great-primer;
+  text-decoration: underline;
+  color: orchid;
+  text-align: center;
+   &:hover {
+    color: purple
+   }
+}
+
 .footer {
   border-top: 5px solid orangered;
   font-size: $english;
