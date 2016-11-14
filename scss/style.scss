@@ -127,11 +127,15 @@ h1 {
 }
 
 .nav__link--term {
-  font-size: 3em;
+  font-size: $paragon;
   cursor: pointer;
 
   &:hover {
     color: lighten($darkgrey, 10%);
+  }
+
+  @include screenWidth(small) {
+    font-size: $columbian;
   }
 }
 

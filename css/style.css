@@ -424,10 +424,13 @@ h1 {
   position: static; }
 
 .nav__link--term {
-  font-size: 3em;
+  font-size: 2rem;
   cursor: pointer; }
   .nav__link--term:hover {
     color: #5a6773; }
+  @media (max-width: 600px) {
+    .nav__link--term {
+      font-size: 1.6rem; } }
 
 .active {
   font-family: "riterblack", courier, monospaced; }
