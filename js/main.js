@@ -98,6 +98,62 @@ $( document ).ready(function() {
 
   $( window ).on('resize scroll', stickIt);
 
+  $('.js-term-two').hide();
+  $('.js-term-three').hide();
+
+  $('#termOne').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.js-term-one').fadeIn('slow');
+    $('.js-term-two').fadeOut('slow');
+    $('.js-term-three').fadeOut('slow');
+    $('.ba-slider').each(function(){
+      var cur = $(this);
+      // Adjust the slider
+      var width = cur.width()+'px';
+      cur.find('.resize img').css('width', width);
+      // Bind dragging events
+      drags(cur.find('.handle'), cur.find('.resize'), cur);
+    });
+    $('.nav--term').css('background', 'turquoise');
+    $('body').css('background', 'mintcream');
+  });
+
+  $('#termTwo').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.js-term-two').fadeIn('slow');
+    $('.js-term-one').fadeOut('slow');
+    $('.js-term-three').fadeOut('slow');
+    $('.ba-slider').each(function(){
+      var cur = $(this);
+      // Adjust the slider
+      var width = cur.width()+'px';
+      cur.find('.resize img').css('width', width);
+      // Bind dragging events
+      drags(cur.find('.handle'), cur.find('.resize'), cur);
+    });
+    $('.nav--term').css('background', 'deepskyblue');
+    $('body').css('background', 'aliceblue');
+  });
+
+  $('#termThree').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.js-term-three').fadeIn('slow');
+    $('.js-term-one').fadeOut('slow');
+    $('.js-term-two').fadeOut('slow');
+    $('.ba-slider').each(function(){
+      var cur = $(this);
+      // Adjust the slider
+      var width = cur.width()+'px';
+      cur.find('.resize img').css('width', width);
+      // Bind dragging events
+      drags(cur.find('.handle'), cur.find('.resize'), cur);
+    });
+    $('.nav--term').css('background', 'orchid');
+    $('body').css('background', 'snow');
+  });
+
+  
+
 
   $('.ba-slider').each(function(){
     var cur = $(this);
@@ -108,6 +164,54 @@ $( document ).ready(function() {
     drags(cur.find('.handle'), cur.find('.resize'), cur);
   });
 
+  $('#toTermTwo').click(function () {
+    $('#termTwo').addClass('active').siblings().removeClass('active');
+    $('.js-term-two').fadeIn('slow');
+    $('.js-term-one').fadeOut('slow');
+    $('.js-term-three').fadeOut('slow');
+    $('.nav--term').css('background', 'deepskyblue');
+    $('body').css('background', 'aliceblue');
+
+    $('.ba-slider').each(function(){
+      var cur = $(this);
+      // Adjust the slider
+      var width = cur.width()+'px';
+      cur.find('.resize img').css('width', width);
+      // Bind dragging events
+      drags(cur.find('.handle'), cur.find('.resize'), cur);
+    });
+
+        $("html, body").animate({
+            scrollTop: $(window).height()
+        }, 600);
+        return false;
+
+  });
+
+  $('#toTermThree').click(function () {
+    $('#termThree').addClass('active').siblings().removeClass('active');
+    
+    $('.js-term-three').fadeIn('slow');
+    $('.js-term-one').fadeOut('slow');
+    $('.js-term-two').fadeOut('slow');
+    $('.nav--term').css('background', 'orchid');
+    $('body').css('background', 'snow');
+
+    $('.ba-slider').each(function(){
+      var cur = $(this);
+      // Adjust the slider
+      var width = cur.width()+'px';
+      cur.find('.resize img').css('width', width);
+      // Bind dragging events
+      drags(cur.find('.handle'), cur.find('.resize'), cur);
+    });
+
+    $("html, body").animate({
+            scrollTop: $(window).height()
+        }, 600);
+        return false;
+
+  }); 
 
 });
 

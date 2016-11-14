@@ -9,7 +9,16 @@ $fg-lighter: lighten($fg-main, 10%);
 
 /* fonts */
 
+// term one
+@font-face {
+    font-family: 'riter_neue_regularregular';
+    src: url('fonts/riter-term1-roman-end-webfont.woff2') format('woff2'),
+         url('fonts/riter-term1-roman-end-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+// term two
 @font-face {
     font-family: 'riter_basic_regularregular';
     src: url('fonts/riter_base-webfont.woff2') format('woff2'),
@@ -26,6 +35,36 @@ $fg-lighter: lighten($fg-main, 10%);
     font-style: normal;
 }
 
+//term three
+@font-face {
+    font-family: 'riterbasic';
+    src: url('fonts/riter_base-webfont-3.woff2') format('woff2'),
+         url('fonts/riter_base-webfont-3.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'riter_italicitalic';
+    src: url('fonts/riter_base_italic-webfont-3.woff2') format('woff2'),
+         url('fonts/riter_base_italic-webfont-3.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'riterblack';
+    src: url('fonts/riter_fattest-webfont.woff2') format('woff2'),
+         url('fonts/riter_fattest-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+//term three
 
 /* type sizes*/
 $imperial: 10.8rem;
@@ -44,10 +83,22 @@ $brevier: 0.8rem;
 $nonpareil: 0.6rem;
 $diamond: 0.4rem;
 
+$term-one-regular: "riter_neue_regularregular", courier, monospaced;
+
+$term-two-regular: "riter_basic_regularregular", courier, monospaced;
+$term-two-italic: "riter_basic_italicitalic", courier, monospaced;
+
+$term-three-regular: "riterbasic", courier, monospaced;
+$term-three-italic: "riter_italicitalic", courier, monospaced;
+$term-three-black: "riterblack", courier, monospaced;
+
 /* set main body copy */
-$font-main: "riter_basic_regularregular", courier, monospaced;
-$font-secondary: "riter_basic_italicitalic", courier, monospaced;
+$font-main: $term-three-regular;
+$font-secondary: $term-three-italic;
+$font-bold: $term-three-black;
 $body-copy: $great-primer;
+
+
 
 
 /* sizes */
