@@ -59,15 +59,19 @@ h1 {
   font-size: $great-primer;
   position: absolute;
   width: 100%;
-  top: 65%;
+  top: 60%;
   text-align: center;
 
+  @include screenWidth(small) {
+    font-size: $english;
+  }
+
   span {
-    background: rgba(white, 0.2);
+    background: rgba(white, 0.5);
     padding: 20px;
     max-width: 650px;
     display: inline-block;
-    line-height: 1.3
+    line-height: 1.5;
   }
 }
 
@@ -175,9 +179,6 @@ section {
 // Inspiration
 .inspiration {
   margin-top: 6rem;
-  @include screenWidth(small) {
-    margin-top: 2rem;
-  }
 }
 
 .gallery__item {
